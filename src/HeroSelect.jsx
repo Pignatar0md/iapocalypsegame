@@ -38,7 +38,7 @@ function HeroSelect ({ onChoose })
                             <span className="hero-meta">
                                 <span className="hero-name">{hero.name}</span>
                                 {hero.traits.map((trait) => (
-                                    <span key={trait}>{trait}</span>
+                                    <span key={trait}>{trait} | </span>
                                 ))}
                             </span>
                             <img src={hero.image} alt="" />
