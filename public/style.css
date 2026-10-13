@@ -210,6 +210,10 @@ body {
     border-radius: 18px;
 }
 
+.hero-img-abeni {
+    object-position: center 22%;
+}
+
 @media (max-width: 700px) {
     .hero-panel {
         padding: 20px 16px 16px;

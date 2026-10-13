@@ -43,7 +43,7 @@ function HeroSelect ({ onChoose })
                                     ))}
                                     </span>
                             </span>
-                            <img src={hero.image} alt="" />
+                            <img className={hero.id === 'abeni' ? 'hero-img-abeni' : undefined} src={hero.image} alt="" />
                         </button>
                     ))}
                 </div>
