@@ -37,9 +37,11 @@ function HeroSelect ({ onChoose })
                         <button className="hero-card" type="button" key={hero.id} onClick={() => onChoose(hero.id)}>
                             <span className="hero-meta">
                                 <span className="hero-name">{hero.name}</span>
+                                <span>
                                 {hero.traits.map((trait) => (
-                                    <span key={trait}>{trait} | </span>
-                                ))}
+                                        trait + ' | '
+                                    ))}
+                                    </span>
                             </span>
                             <img src={hero.image} alt="" />
                         </button>
