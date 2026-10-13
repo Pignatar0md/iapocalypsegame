@@ -1,4 +1,9 @@
 import { Scene } from 'phaser';
+import { getSelectedHero } from '../selectedHero';
+import { ASSET_INDEX_KEY, ASSET_INDEX_URL, getBackgroundLayers, getCharacter } from '../stage';
+import { FOOD_CELL, FOOD_COLUMNS, FOOD_ROWS } from '../waves';
+
+const VILLAIN_IDS = [ 'vilain', 'vilain2', 'vilain3f', 'vilain3m' ];
 
 export class Preloader extends Scene
 {
@@ -9,19 +14,14 @@ export class Preloader extends Scene
 
     init ()
     {
-        //  We loaded this image in our Boot Scene, so we can display it here
-        this.add.image(512, 384, 'background');
+        this.add.image(960, 540, 'background').setDisplaySize(1920, 1080);
 
-        //  A simple progress bar. This is the outline of the bar.
-        this.add.rectangle(512, 384, 468, 32).setStrokeStyle(1, 0xffffff);
+        this.add.rectangle(960, 540, 468, 32).setStrokeStyle(1, 0xffffff);
 
-        //  This is the progress bar itself. It will increase in size from the left based on the % of progress.
-        const bar = this.add.rectangle(512-230, 384, 4, 28, 0xffffff);
+        const bar = this.add.rectangle(960 - 230, 540, 4, 28, 0xffffff);
 
-        //  Use the 'progress' event emitted by the LoaderPlugin to update the loading bar
         this.load.on('progress', (progress) => {
 
-            //  Update the progress bar (our bar is 464px wide, so 100% = 464px)
             bar.width = 4 + (460 * progress);
 
         });
@@ -29,19 +29,126 @@ export class Preloader extends Scene
 
     preload ()
     {
-        //  Load the assets for the game - Replace with your own assets
-        this.load.setPath('assets');
+        this.load.image('logo', 'assets/logo.png');
+        this.load.image('star', 'assets/star.png');
+        this.load.image('food', 'assets/purchased_assets/sprites/Food.png');
+        this.load.json(ASSET_INDEX_KEY, ASSET_INDEX_URL);
 
-        this.load.image('logo', 'logo.png');
-        this.load.image('star', 'star.png');
+        this.load.on(`filecomplete-json-${ASSET_INDEX_KEY}`, (key, type, data) => {
+
+            for (const layer of getBackgroundLayers(data))
+            {
+                this.load.image(layer.key, layer.path);
+            }
+
+            const chosen = getCharacter(data, getSelectedHero()) || getCharacter(data, 'lauti');
+
+            this.heroId = chosen.id;
+            this.load.image(chosen.id, chosen.path);
+
+            for (const id of VILLAIN_IDS)
+            {
+                const vilain = getCharacter(data, id);
+                this.load.image(vilain.id, vilain.path);
+            }
+
+        });
     }
 
     create ()
     {
-        //  When all the assets have loaded, it's often worth creating global objects here that the rest of the game can use.
-        //  For example, you can define global animations here, so we can use them in other scenes.
+        const index = this.cache.json.get(ASSET_INDEX_KEY);
+        const hero = getCharacter(index, this.heroId) || getCharacter(index, 'lauti');
 
-        //  Move to the MainMenu. You could also swap this for a Scene Transition, such as a camera fade.
-        this.scene.start('MainMenu');
+        this.registerCharacter(hero);
+
+        for (const id of VILLAIN_IDS)
+        {
+            this.registerCharacter(getCharacter(index, id));
+        }
+        this.sliceFood();
+        this.scene.start('Game');
+    }
+
+    sliceFood ()
+    {
+        const texture = this.textures.get('food');
+        let index = 0;
+
+        for (let row = 0; row < FOOD_ROWS; row++)
+        {
+            for (let column = 0; column < FOOD_COLUMNS; column++)
+            {
+                const name = `food-${index}`;
+
+                if (!texture.has(name))
+                {
+                    texture.add(name, 0, column * FOOD_CELL, row * FOOD_CELL, FOOD_CELL, FOOD_CELL);
+                }
+
+                index += 1;
+            }
+        }
+    }
+
+    registerCharacter (character)
+    {
+        this.clearCheckerboard(character.id);
+
+        const texture = this.textures.get(character.id);
+
+        for (const frame of character.frames)
+        {
+            if (!texture.has(frame.name))
+            {
+                texture.add(frame.name, 0, frame.x, frame.y, frame.w, frame.h);
+            }
+        }
+
+        for (const anim of character.animations)
+        {
+            if (!this.anims.exists(anim.key))
+            {
+                this.anims.create({
+                    key: anim.key,
+                    frames: anim.frames.map((name) => ({ key: character.id, frame: name })),
+                    frameRate: anim.frameRate,
+                    repeat: anim.repeat
+                });
+            }
+        }
+    }
+
+    clearCheckerboard (key)
+    {
+        const source = this.textures.get(key).getSourceImage();
+        const canvas = this.textures.createCanvas(key + '-clean', source.width, source.height);
+        const ctx = canvas.getContext();
+
+        ctx.drawImage(source, 0, 0);
+
+        const image = ctx.getImageData(0, 0, source.width, source.height);
+        const data = image.data;
+
+        for (let i = 0; i < data.length; i += 4)
+        {
+            const r = data[i];
+            const g = data[i + 1];
+            const b = data[i + 2];
+            const chroma = Math.max(r, g, b) - Math.min(r, g, b);
+            const lum = (r + g + b) / 3;
+
+            if (chroma <= 18 && lum >= 175)
+            {
+                data[i + 3] = 0;
+            }
+        }
+
+        ctx.putImageData(image, 0, 0);
+        canvas.refresh();
+
+        this.textures.remove(key);
+        this.textures.addCanvas(key, canvas.canvas);
+        this.textures.remove(key + '-clean');
     }
 }

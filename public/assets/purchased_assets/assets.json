@@ -1,0 +1,2810 @@
+{
+  "meta": {
+    "basePath": "assets/purchased_assets",
+    "pathRoot": "public",
+    "notes": "Paths are relative to public/ and can be passed straight to the Phaser loader. Background layers are full 1920x1080 canvases: stack each variant from order 0 (back) to the last (front) at the same position. Composite is the flattened preview. Character frames are trimmed rects, not a uniform grid; register them with texture.add and play animations with origin (0.5, 1). repeat -1 loops, repeat 0 plays once."
+  },
+  "backgrounds": [
+    {
+      "id": "postapocalypse-1",
+      "width": 1920,
+      "height": 1080,
+      "variants": {
+        "bright": {
+          "composite": {
+            "key": "bg-postapocalypse-1-bright-composite",
+            "path": "assets/purchased_assets/PNG/Postapocalypce1/Bright/postapocalypse1.png",
+            "type": "image",
+            "width": 1920,
+            "height": 1080,
+            "role": "composite"
+          },
+          "layers": [
+            {
+              "key": "bg-postapocalypse-1-bright-clouds1",
+              "path": "assets/purchased_assets/PNG/Postapocalypce1/Bright/clouds1.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 0,
+              "role": "sky"
+            },
+            {
+              "key": "bg-postapocalypse-1-bright-clouds2",
+              "path": "assets/purchased_assets/PNG/Postapocalypce1/Bright/clouds2.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 1,
+              "role": "sky"
+            },
+            {
+              "key": "bg-postapocalypse-1-bright-ground-houses-bg",
+              "path": "assets/purchased_assets/PNG/Postapocalypce1/Bright/ground&houses_bg.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 2,
+              "role": "far"
+            },
+            {
+              "key": "bg-postapocalypse-1-bright-ground-houses",
+              "path": "assets/purchased_assets/PNG/Postapocalypce1/Bright/ground&houses.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 3,
+              "role": "mid"
+            },
+            {
+              "key": "bg-postapocalypse-1-bright-ground-houses2",
+              "path": "assets/purchased_assets/PNG/Postapocalypce1/Bright/ground&houses2.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 4,
+              "role": "mid"
+            },
+            {
+              "key": "bg-postapocalypse-1-bright-road",
+              "path": "assets/purchased_assets/PNG/Postapocalypce1/Bright/road.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 5,
+              "role": "ground"
+            },
+            {
+              "key": "bg-postapocalypse-1-bright-fence",
+              "path": "assets/purchased_assets/PNG/Postapocalypce1/Bright/fence.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 6,
+              "role": "front"
+            }
+          ]
+        },
+        "pale": {
+          "composite": {
+            "key": "bg-postapocalypse-1-pale-composite",
+            "path": "assets/purchased_assets/PNG/Postapocalypce1/Pale/postapocalypse1.png",
+            "type": "image",
+            "width": 1920,
+            "height": 1080,
+            "role": "composite"
+          },
+          "layers": [
+            {
+              "key": "bg-postapocalypse-1-pale-clouds1",
+              "path": "assets/purchased_assets/PNG/Postapocalypce1/Pale/clouds1.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 0,
+              "role": "sky"
+            },
+            {
+              "key": "bg-postapocalypse-1-pale-clouds2",
+              "path": "assets/purchased_assets/PNG/Postapocalypce1/Pale/clouds2.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 1,
+              "role": "sky"
+            },
+            {
+              "key": "bg-postapocalypse-1-pale-ground-houses-bg",
+              "path": "assets/purchased_assets/PNG/Postapocalypce1/Pale/ground&houses_bg.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 2,
+              "role": "far"
+            },
+            {
+              "key": "bg-postapocalypse-1-pale-ground-houses",
+              "path": "assets/purchased_assets/PNG/Postapocalypce1/Pale/ground&houses.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 3,
+              "role": "mid"
+            },
+            {
+              "key": "bg-postapocalypse-1-pale-ground-houses2",
+              "path": "assets/purchased_assets/PNG/Postapocalypce1/Pale/ground&houses2.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 4,
+              "role": "mid"
+            },
+            {
+              "key": "bg-postapocalypse-1-pale-road",
+              "path": "assets/purchased_assets/PNG/Postapocalypce1/Pale/road.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 5,
+              "role": "ground"
+            },
+            {
+              "key": "bg-postapocalypse-1-pale-fence",
+              "path": "assets/purchased_assets/PNG/Postapocalypce1/Pale/fence.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 6,
+              "role": "front"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "postapocalypse-2",
+      "width": 1920,
+      "height": 1080,
+      "variants": {
+        "bright": {
+          "composite": {
+            "key": "bg-postapocalypse-2-bright-composite",
+            "path": "assets/purchased_assets/PNG/Postapocalypce2/Bright/postapocalypse2.png",
+            "type": "image",
+            "width": 1920,
+            "height": 1080,
+            "role": "composite"
+          },
+          "layers": [
+            {
+              "key": "bg-postapocalypse-2-bright-sky",
+              "path": "assets/purchased_assets/PNG/Postapocalypce2/Bright/sky.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 0,
+              "role": "sky"
+            },
+            {
+              "key": "bg-postapocalypse-2-bright-houses-trees-bg",
+              "path": "assets/purchased_assets/PNG/Postapocalypce2/Bright/houses&trees_bg.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 1,
+              "role": "far"
+            },
+            {
+              "key": "bg-postapocalypse-2-bright-houses",
+              "path": "assets/purchased_assets/PNG/Postapocalypce2/Bright/houses.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 2,
+              "role": "mid"
+            },
+            {
+              "key": "bg-postapocalypse-2-bright-car-trees-etc",
+              "path": "assets/purchased_assets/PNG/Postapocalypce2/Bright/car_trees_etc.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 3,
+              "role": "mid"
+            },
+            {
+              "key": "bg-postapocalypse-2-bright-bird1",
+              "path": "assets/purchased_assets/PNG/Postapocalypce2/Bright/bird1.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 4,
+              "role": "front"
+            },
+            {
+              "key": "bg-postapocalypse-2-bright-bird2",
+              "path": "assets/purchased_assets/PNG/Postapocalypce2/Bright/bird2.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 5,
+              "role": "front"
+            },
+            {
+              "key": "bg-postapocalypse-2-bright-bird3",
+              "path": "assets/purchased_assets/PNG/Postapocalypce2/Bright/bird3.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 6,
+              "role": "front"
+            },
+            {
+              "key": "bg-postapocalypse-2-bright-road",
+              "path": "assets/purchased_assets/PNG/Postapocalypce2/Bright/road.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 7,
+              "role": "ground"
+            },
+            {
+              "key": "bg-postapocalypse-2-bright-fence",
+              "path": "assets/purchased_assets/PNG/Postapocalypce2/Bright/fence.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 8,
+              "role": "front"
+            }
+          ]
+        },
+        "pale": {
+          "composite": {
+            "key": "bg-postapocalypse-2-pale-composite",
+            "path": "assets/purchased_assets/PNG/Postapocalypce2/Pale/postapocalypse2.png",
+            "type": "image",
+            "width": 1920,
+            "height": 1080,
+            "role": "composite"
+          },
+          "layers": [
+            {
+              "key": "bg-postapocalypse-2-pale-sky",
+              "path": "assets/purchased_assets/PNG/Postapocalypce2/Pale/sky.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 0,
+              "role": "sky"
+            },
+            {
+              "key": "bg-postapocalypse-2-pale-houses-trees-bg",
+              "path": "assets/purchased_assets/PNG/Postapocalypce2/Pale/houses&trees_bg.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 1,
+              "role": "far"
+            },
+            {
+              "key": "bg-postapocalypse-2-pale-houses",
+              "path": "assets/purchased_assets/PNG/Postapocalypce2/Pale/houses.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 2,
+              "role": "mid"
+            },
+            {
+              "key": "bg-postapocalypse-2-pale-car-trees-etc",
+              "path": "assets/purchased_assets/PNG/Postapocalypce2/Pale/car_trees_etc.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 3,
+              "role": "mid"
+            },
+            {
+              "key": "bg-postapocalypse-2-pale-bird1",
+              "path": "assets/purchased_assets/PNG/Postapocalypce2/Pale/bird1.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 4,
+              "role": "front"
+            },
+            {
+              "key": "bg-postapocalypse-2-pale-bird2",
+              "path": "assets/purchased_assets/PNG/Postapocalypce2/Pale/bird2.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 5,
+              "role": "front"
+            },
+            {
+              "key": "bg-postapocalypse-2-pale-bird3",
+              "path": "assets/purchased_assets/PNG/Postapocalypce2/Pale/bird3.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 6,
+              "role": "front"
+            },
+            {
+              "key": "bg-postapocalypse-2-pale-road",
+              "path": "assets/purchased_assets/PNG/Postapocalypce2/Pale/road.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 7,
+              "role": "ground"
+            },
+            {
+              "key": "bg-postapocalypse-2-pale-fence",
+              "path": "assets/purchased_assets/PNG/Postapocalypce2/Pale/fence.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 8,
+              "role": "front"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "postapocalypse-3",
+      "width": 1920,
+      "height": 1080,
+      "variants": {
+        "bright": {
+          "composite": {
+            "key": "bg-postapocalypse-3-bright-composite",
+            "path": "assets/purchased_assets/PNG/Postapocalypce3/Bright/postapocalypse3.png",
+            "type": "image",
+            "width": 1920,
+            "height": 1080,
+            "role": "composite"
+          },
+          "layers": [
+            {
+              "key": "bg-postapocalypse-3-bright-sky",
+              "path": "assets/purchased_assets/PNG/Postapocalypce3/Bright/sky.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 0,
+              "role": "sky"
+            },
+            {
+              "key": "bg-postapocalypse-3-bright-moon",
+              "path": "assets/purchased_assets/PNG/Postapocalypce3/Bright/moon.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 1,
+              "role": "sky"
+            },
+            {
+              "key": "bg-postapocalypse-3-bright-sand-back",
+              "path": "assets/purchased_assets/PNG/Postapocalypce3/Bright/sand_back.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 2,
+              "role": "far"
+            },
+            {
+              "key": "bg-postapocalypse-3-bright-sand-objects1",
+              "path": "assets/purchased_assets/PNG/Postapocalypce3/Bright/sand&objects1.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 3,
+              "role": "mid"
+            },
+            {
+              "key": "bg-postapocalypse-3-bright-sand-objects2",
+              "path": "assets/purchased_assets/PNG/Postapocalypce3/Bright/sand&objects2.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 4,
+              "role": "mid"
+            },
+            {
+              "key": "bg-postapocalypse-3-bright-sand",
+              "path": "assets/purchased_assets/PNG/Postapocalypce3/Bright/sand.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 5,
+              "role": "ground"
+            },
+            {
+              "key": "bg-postapocalypse-3-bright-sand-objects3",
+              "path": "assets/purchased_assets/PNG/Postapocalypce3/Bright/sand&objects3.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 6,
+              "role": "front"
+            }
+          ]
+        },
+        "pale": {
+          "composite": {
+            "key": "bg-postapocalypse-3-pale-composite",
+            "path": "assets/purchased_assets/PNG/Postapocalypce3/Pale/postapocalypse3.png",
+            "type": "image",
+            "width": 1920,
+            "height": 1080,
+            "role": "composite"
+          },
+          "layers": [
+            {
+              "key": "bg-postapocalypse-3-pale-sky",
+              "path": "assets/purchased_assets/PNG/Postapocalypce3/Pale/sky.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 0,
+              "role": "sky"
+            },
+            {
+              "key": "bg-postapocalypse-3-pale-moon",
+              "path": "assets/purchased_assets/PNG/Postapocalypce3/Pale/moon.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 1,
+              "role": "sky"
+            },
+            {
+              "key": "bg-postapocalypse-3-pale-sand-back",
+              "path": "assets/purchased_assets/PNG/Postapocalypce3/Pale/sand_back.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 2,
+              "role": "far"
+            },
+            {
+              "key": "bg-postapocalypse-3-pale-sand-objects1",
+              "path": "assets/purchased_assets/PNG/Postapocalypce3/Pale/sand&objects1.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 3,
+              "role": "mid"
+            },
+            {
+              "key": "bg-postapocalypse-3-pale-sand-objects2",
+              "path": "assets/purchased_assets/PNG/Postapocalypce3/Pale/sand&objects2.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 4,
+              "role": "mid"
+            },
+            {
+              "key": "bg-postapocalypse-3-pale-sand",
+              "path": "assets/purchased_assets/PNG/Postapocalypce3/Pale/sand.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 5,
+              "role": "ground"
+            },
+            {
+              "key": "bg-postapocalypse-3-pale-sand-objects3",
+              "path": "assets/purchased_assets/PNG/Postapocalypce3/Pale/sand&objects3.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 6,
+              "role": "front"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "postapocalypse-4",
+      "width": 1920,
+      "height": 1080,
+      "variants": {
+        "bright": {
+          "composite": {
+            "key": "bg-postapocalypse-4-bright-composite",
+            "path": "assets/purchased_assets/PNG/Postapocalypce4/Bright/postapocalypse4.png",
+            "type": "image",
+            "width": 1920,
+            "height": 1080,
+            "role": "composite"
+          },
+          "layers": [
+            {
+              "key": "bg-postapocalypse-4-bright-bg",
+              "path": "assets/purchased_assets/PNG/Postapocalypce4/Bright/bg.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 0,
+              "role": "sky"
+            },
+            {
+              "key": "bg-postapocalypse-4-bright-columns-floor",
+              "path": "assets/purchased_assets/PNG/Postapocalypce4/Bright/columns&floor.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 1,
+              "role": "mid"
+            },
+            {
+              "key": "bg-postapocalypse-4-bright-floor-underfloor",
+              "path": "assets/purchased_assets/PNG/Postapocalypce4/Bright/floor&underfloor.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 2,
+              "role": "ground"
+            },
+            {
+              "key": "bg-postapocalypse-4-bright-rail-wall",
+              "path": "assets/purchased_assets/PNG/Postapocalypce4/Bright/rail&wall.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 3,
+              "role": "ground"
+            },
+            {
+              "key": "bg-postapocalypse-4-bright-infopost-wires",
+              "path": "assets/purchased_assets/PNG/Postapocalypce4/Bright/infopost&wires.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 4,
+              "role": "mid"
+            },
+            {
+              "key": "bg-postapocalypse-4-bright-wires",
+              "path": "assets/purchased_assets/PNG/Postapocalypce4/Bright/wires.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 5,
+              "role": "front"
+            },
+            {
+              "key": "bg-postapocalypse-4-bright-train",
+              "path": "assets/purchased_assets/PNG/Postapocalypce4/Bright/train.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 6,
+              "role": "front"
+            }
+          ]
+        },
+        "pale": {
+          "composite": {
+            "key": "bg-postapocalypse-4-pale-composite",
+            "path": "assets/purchased_assets/PNG/Postapocalypce4/Pale/postapocalypse4.png",
+            "type": "image",
+            "width": 1920,
+            "height": 1080,
+            "role": "composite"
+          },
+          "layers": [
+            {
+              "key": "bg-postapocalypse-4-pale-bg",
+              "path": "assets/purchased_assets/PNG/Postapocalypce4/Pale/bg.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 0,
+              "role": "sky"
+            },
+            {
+              "key": "bg-postapocalypse-4-pale-columns-floor",
+              "path": "assets/purchased_assets/PNG/Postapocalypce4/Pale/columns&floor.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 1,
+              "role": "mid"
+            },
+            {
+              "key": "bg-postapocalypse-4-pale-rail-wall",
+              "path": "assets/purchased_assets/PNG/Postapocalypce4/Pale/rail&wall.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 3,
+              "role": "ground"
+            },
+            {
+              "key": "bg-postapocalypse-4-pale-infopost-wires",
+              "path": "assets/purchased_assets/PNG/Postapocalypce4/Pale/infopost&wires.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 4,
+              "role": "mid"
+            },
+            {
+              "key": "bg-postapocalypse-4-pale-wires",
+              "path": "assets/purchased_assets/PNG/Postapocalypce4/Pale/wires.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 5,
+              "role": "front"
+            },
+            {
+              "key": "bg-postapocalypse-4-pale-train",
+              "path": "assets/purchased_assets/PNG/Postapocalypce4/Pale/train.png",
+              "type": "image",
+              "width": 1920,
+              "height": 1080,
+              "order": 6,
+              "role": "front"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "characters": [
+    {
+      "id": "lauti",
+      "name": "Lauti",
+      "vehicle": "Fat Bob 114",
+      "facing": "right",
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "path": "assets/purchased_assets/sprites/lauti.png",
+      "type": "atlas",
+      "width": 1360,
+      "height": 1360,
+      "frames": [
+        {
+          "name": "walk-0",
+          "x": 41,
+          "y": 106,
+          "w": 137,
+          "h": 199
+        },
+        {
+          "name": "walk-1",
+          "x": 197,
+          "y": 112,
+          "w": 120,
+          "h": 193
+        },
+        {
+          "name": "walk-2",
+          "x": 345,
+          "y": 112,
+          "w": 120,
+          "h": 193
+        },
+        {
+          "name": "walk-3",
+          "x": 485,
+          "y": 112,
+          "w": 124,
+          "h": 193
+        },
+        {
+          "name": "walk-4",
+          "x": 632,
+          "y": 112,
+          "w": 120,
+          "h": 193
+        },
+        {
+          "name": "walk-5",
+          "x": 767,
+          "y": 112,
+          "w": 120,
+          "h": 193
+        },
+        {
+          "name": "walk-6",
+          "x": 907,
+          "y": 112,
+          "w": 126,
+          "h": 193
+        },
+        {
+          "name": "walk-7",
+          "x": 1055,
+          "y": 112,
+          "w": 131,
+          "h": 193
+        },
+        {
+          "name": "walk-8",
+          "x": 1199,
+          "y": 112,
+          "w": 134,
+          "h": 193
+        },
+        {
+          "name": "hurt-0",
+          "x": 10,
+          "y": 363,
+          "w": 129,
+          "h": 188
+        },
+        {
+          "name": "hurt-1",
+          "x": 157,
+          "y": 369,
+          "w": 124,
+          "h": 182
+        },
+        {
+          "name": "hurt-2",
+          "x": 301,
+          "y": 360,
+          "w": 128,
+          "h": 190
+        },
+        {
+          "name": "hurt-3",
+          "x": 438,
+          "y": 378,
+          "w": 113,
+          "h": 173
+        },
+        {
+          "name": "hurt-4",
+          "x": 574,
+          "y": 444,
+          "w": 155,
+          "h": 103
+        },
+        {
+          "name": "hurt-5",
+          "x": 749,
+          "y": 442,
+          "w": 165,
+          "h": 100
+        },
+        {
+          "name": "hurt-6",
+          "x": 937,
+          "y": 470,
+          "w": 184,
+          "h": 72
+        },
+        {
+          "name": "hurt-7",
+          "x": 1151,
+          "y": 470,
+          "w": 184,
+          "h": 72
+        },
+        {
+          "name": "attack-0",
+          "x": 47,
+          "y": 619,
+          "w": 145,
+          "h": 186
+        },
+        {
+          "name": "attack-1",
+          "x": 228,
+          "y": 574,
+          "w": 144,
+          "h": 231
+        },
+        {
+          "name": "attack-2",
+          "x": 410,
+          "y": 620,
+          "w": 226,
+          "h": 211
+        },
+        {
+          "name": "attack-3",
+          "x": 636,
+          "y": 619,
+          "w": 245,
+          "h": 186
+        },
+        {
+          "name": "attack-4",
+          "x": 895,
+          "y": 627,
+          "w": 198,
+          "h": 178
+        },
+        {
+          "name": "block-0",
+          "x": 1130,
+          "y": 608,
+          "w": 180,
+          "h": 202
+        },
+        {
+          "name": "jump-0",
+          "x": 53,
+          "y": 869,
+          "w": 196,
+          "h": 181
+        },
+        {
+          "name": "jump-1",
+          "x": 286,
+          "y": 841,
+          "w": 127,
+          "h": 181
+        },
+        {
+          "name": "jump-2",
+          "x": 494,
+          "y": 827,
+          "w": 182,
+          "h": 211
+        },
+        {
+          "name": "jump-3",
+          "x": 701,
+          "y": 866,
+          "w": 200,
+          "h": 186
+        },
+        {
+          "name": "jump-4",
+          "x": 940,
+          "y": 880,
+          "w": 176,
+          "h": 168
+        },
+        {
+          "name": "jump-5",
+          "x": 1155,
+          "y": 882,
+          "w": 148,
+          "h": 185
+        },
+        {
+          "name": "ride-0",
+          "x": 40,
+          "y": 1118,
+          "w": 237,
+          "h": 185
+        },
+        {
+          "name": "ride-1",
+          "x": 315,
+          "y": 1114,
+          "w": 224,
+          "h": 189
+        },
+        {
+          "name": "ride-2",
+          "x": 575,
+          "y": 1116,
+          "w": 224,
+          "h": 187
+        },
+        {
+          "name": "ride-3",
+          "x": 838,
+          "y": 1114,
+          "w": 222,
+          "h": 189
+        },
+        {
+          "name": "ride-4",
+          "x": 1100,
+          "y": 1115,
+          "w": 225,
+          "h": 188
+        }
+      ],
+      "animations": [
+        {
+          "key": "lauti-idle",
+          "frames": [
+            "walk-0"
+          ],
+          "frameRate": 1,
+          "repeat": -1
+        },
+        {
+          "key": "lauti-walk",
+          "frames": [
+            "walk-1",
+            "walk-2",
+            "walk-4",
+            "walk-5"
+          ],
+          "frameRate": 10,
+          "repeat": -1
+        },
+        {
+          "key": "lauti-ready",
+          "frames": [
+            "hurt-0"
+          ],
+          "frameRate": 1,
+          "repeat": -1
+        },
+        {
+          "key": "lauti-hurt",
+          "frames": [
+            "hurt-1",
+            "hurt-2",
+            "hurt-3"
+          ],
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "key": "lauti-death",
+          "frames": [
+            "hurt-4",
+            "hurt-5",
+            "hurt-6",
+            "hurt-7"
+          ],
+          "frameRate": 6,
+          "repeat": 0
+        },
+        {
+          "key": "lauti-attack",
+          "frames": [
+            "attack-0",
+            "attack-1",
+            "attack-2",
+            "attack-3",
+            "attack-4"
+          ],
+          "frameRate": 16,
+          "repeat": 0
+        },
+        {
+          "key": "lauti-block",
+          "frames": [
+            "block-0"
+          ],
+          "frameRate": 1,
+          "repeat": -1
+        },
+        {
+          "key": "lauti-jump",
+          "frames": [
+            "jump-1"
+          ],
+          "frameRate": 1,
+          "repeat": -1
+        },
+        {
+          "key": "lauti-jump-attack",
+          "frames": [
+            "jump-0",
+            "jump-1",
+            "jump-2",
+            "jump-3",
+            "jump-4",
+            "jump-5"
+          ],
+          "frameRate": 16,
+          "repeat": 0
+        },
+        {
+          "key": "lauti-ride",
+          "frames": [
+            "ride-0",
+            "ride-1",
+            "ride-2",
+            "ride-3",
+            "ride-4"
+          ],
+          "frameRate": 8,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "id": "rafa",
+      "name": "Rafa",
+      "vehicle": "Suzuki DR 350",
+      "facing": "right",
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "path": "assets/purchased_assets/sprites/rafa.png",
+      "type": "atlas",
+      "width": 1360,
+      "height": 1360,
+      "frames": [
+        {
+          "name": "walk-0",
+          "x": 21,
+          "y": 31,
+          "w": 132,
+          "h": 247,
+          "foot": 66
+        },
+        {
+          "name": "walk-1",
+          "x": 192,
+          "y": 35,
+          "w": 145,
+          "h": 243,
+          "foot": 72
+        },
+        {
+          "name": "walk-2",
+          "x": 371,
+          "y": 36,
+          "w": 139,
+          "h": 242,
+          "foot": 69
+        },
+        {
+          "name": "walk-3",
+          "x": 535,
+          "y": 36,
+          "w": 147,
+          "h": 242,
+          "foot": 73
+        },
+        {
+          "name": "walk-4",
+          "x": 711,
+          "y": 35,
+          "w": 141,
+          "h": 243,
+          "foot": 70
+        },
+        {
+          "name": "walk-5",
+          "x": 873,
+          "y": 36,
+          "w": 142,
+          "h": 242,
+          "foot": 71
+        },
+        {
+          "name": "walk-6",
+          "x": 1036,
+          "y": 35,
+          "w": 152,
+          "h": 243,
+          "foot": 76
+        },
+        {
+          "name": "walk-7",
+          "x": 1205,
+          "y": 36,
+          "w": 143,
+          "h": 242,
+          "foot": 71
+        },
+        {
+          "name": "hurt-0",
+          "x": 19,
+          "y": 326,
+          "w": 133,
+          "h": 234,
+          "foot": 66
+        },
+        {
+          "name": "hurt-1",
+          "x": 178,
+          "y": 336,
+          "w": 145,
+          "h": 224,
+          "foot": 72
+        },
+        {
+          "name": "hurt-2",
+          "x": 340,
+          "y": 334,
+          "w": 137,
+          "h": 224,
+          "foot": 68
+        },
+        {
+          "name": "hurt-3",
+          "x": 525,
+          "y": 351,
+          "w": 134,
+          "h": 209,
+          "foot": 67
+        },
+        {
+          "name": "hurt-4",
+          "x": 702,
+          "y": 431,
+          "w": 189,
+          "h": 129,
+          "foot": 94
+        },
+        {
+          "name": "hurt-5",
+          "x": 890,
+          "y": 436,
+          "w": 205,
+          "h": 122,
+          "foot": 102
+        },
+        {
+          "name": "death-0",
+          "x": 1110,
+          "y": 475,
+          "w": 237,
+          "h": 90,
+          "foot": 118
+        },
+        {
+          "name": "attack-0",
+          "x": 24,
+          "y": 634,
+          "w": 185,
+          "h": 239,
+          "foot": 92
+        },
+        {
+          "name": "attack-1",
+          "x": 249,
+          "y": 593,
+          "w": 169,
+          "h": 279,
+          "foot": 84
+        },
+        {
+          "name": "attack-2",
+          "x": 437,
+          "y": 641,
+          "w": 200,
+          "h": 217,
+          "foot": 100
+        },
+        {
+          "name": "attack-3",
+          "x": 691,
+          "y": 643,
+          "w": 307,
+          "h": 215,
+          "foot": 153
+        },
+        {
+          "name": "attack-4",
+          "x": 1062,
+          "y": 618,
+          "w": 215,
+          "h": 255,
+          "foot": 107
+        },
+        {
+          "name": "jump-0",
+          "x": 41,
+          "y": 968,
+          "w": 108,
+          "h": 153,
+          "foot": 54
+        },
+        {
+          "name": "jump-1",
+          "x": 210,
+          "y": 921,
+          "w": 110,
+          "h": 200,
+          "foot": 55
+        },
+        {
+          "name": "jump-2",
+          "x": 380,
+          "y": 899,
+          "w": 193,
+          "h": 222,
+          "foot": 96
+        },
+        {
+          "name": "jump-3",
+          "x": 621,
+          "y": 882,
+          "w": 255,
+          "h": 202,
+          "foot": 127
+        },
+        {
+          "name": "jump-4",
+          "x": 911,
+          "y": 951,
+          "w": 176,
+          "h": 170,
+          "foot": 88
+        },
+        {
+          "name": "jump-5",
+          "x": 1189,
+          "y": 938,
+          "w": 144,
+          "h": 183,
+          "foot": 72
+        },
+        {
+          "name": "ride-0",
+          "x": 27,
+          "y": 1120,
+          "w": 250,
+          "h": 221,
+          "foot": 125
+        },
+        {
+          "name": "ride-1",
+          "x": 327,
+          "y": 1120,
+          "w": 264,
+          "h": 221,
+          "foot": 132
+        },
+        {
+          "name": "ride-2",
+          "x": 648,
+          "y": 1122,
+          "w": 259,
+          "h": 219,
+          "foot": 129
+        },
+        {
+          "name": "ride-3",
+          "x": 983,
+          "y": 1120,
+          "w": 317,
+          "h": 220,
+          "foot": 158
+        }
+      ],
+      "animations": [
+        {
+          "key": "rafa-idle",
+          "frames": [
+            "walk-0"
+          ],
+          "frameRate": 1,
+          "repeat": -1
+        },
+        {
+          "key": "rafa-walk",
+          "frames": [
+            "walk-1",
+            "walk-2",
+            "walk-3",
+            "walk-4",
+            "walk-5",
+            "walk-6",
+            "walk-7"
+          ],
+          "frameRate": 10,
+          "repeat": -1
+        },
+        {
+          "key": "rafa-hurt",
+          "frames": [
+            "hurt-1",
+            "hurt-2",
+            "hurt-3"
+          ],
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "key": "rafa-death",
+          "frames": [
+            "hurt-4",
+            "hurt-5",
+            "death-0"
+          ],
+          "frameRate": 6,
+          "repeat": 0
+        },
+        {
+          "key": "rafa-attack",
+          "frames": [
+            "attack-0",
+            "attack-1",
+            "attack-2",
+            "attack-3",
+            "attack-4"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        {
+          "key": "rafa-jump",
+          "frames": [
+            "jump-1"
+          ],
+          "frameRate": 1,
+          "repeat": -1
+        },
+        {
+          "key": "rafa-jump-attack",
+          "frames": [
+            "jump-0",
+            "jump-1",
+            "jump-2",
+            "jump-3",
+            "jump-4",
+            "jump-5"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        {
+          "key": "rafa-ride",
+          "frames": [
+            "ride-0",
+            "ride-1",
+            "ride-2",
+            "ride-3"
+          ],
+          "frameRate": 8,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "id": "yasumi",
+      "name": "Yasumi",
+      "vehicle": "Fiat 500",
+      "facing": "right",
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "path": "assets/purchased_assets/sprites/yasumi.png",
+      "type": "atlas",
+      "width": 1360,
+      "height": 1360,
+      "frames": [
+        {
+          "name": "walk-0",
+          "x": 82,
+          "y": 72,
+          "w": 133,
+          "h": 210,
+          "foot": 66
+        },
+        {
+          "name": "walk-1",
+          "x": 296,
+          "y": 72,
+          "w": 129,
+          "h": 210,
+          "foot": 64
+        },
+        {
+          "name": "walk-2",
+          "x": 473,
+          "y": 72,
+          "w": 127,
+          "h": 210,
+          "foot": 63
+        },
+        {
+          "name": "walk-3",
+          "x": 645,
+          "y": 72,
+          "w": 128,
+          "h": 210,
+          "foot": 64
+        },
+        {
+          "name": "walk-4",
+          "x": 818,
+          "y": 72,
+          "w": 131,
+          "h": 210,
+          "foot": 65
+        },
+        {
+          "name": "walk-5",
+          "x": 993,
+          "y": 72,
+          "w": 131,
+          "h": 210,
+          "foot": 65
+        },
+        {
+          "name": "walk-6",
+          "x": 1169,
+          "y": 72,
+          "w": 134,
+          "h": 210,
+          "foot": 67
+        },
+        {
+          "name": "hurt-0",
+          "x": 37,
+          "y": 374,
+          "w": 124,
+          "h": 196,
+          "foot": 62
+        },
+        {
+          "name": "hurt-1",
+          "x": 199,
+          "y": 376,
+          "w": 124,
+          "h": 193,
+          "foot": 62
+        },
+        {
+          "name": "hurt-2",
+          "x": 354,
+          "y": 373,
+          "w": 141,
+          "h": 197,
+          "foot": 70
+        },
+        {
+          "name": "hurt-3",
+          "x": 529,
+          "y": 384,
+          "w": 112,
+          "h": 185,
+          "foot": 56
+        },
+        {
+          "name": "hurt-4",
+          "x": 685,
+          "y": 385,
+          "w": 122,
+          "h": 150,
+          "foot": 61
+        },
+        {
+          "name": "hurt-5",
+          "x": 842,
+          "y": 399,
+          "w": 113,
+          "h": 137,
+          "foot": 56
+        },
+        {
+          "name": "death-0",
+          "x": 977,
+          "y": 465,
+          "w": 142,
+          "h": 76,
+          "foot": 71
+        },
+        {
+          "name": "death-1",
+          "x": 1141,
+          "y": 472,
+          "w": 192,
+          "h": 74,
+          "foot": 96
+        },
+        {
+          "name": "attack-0",
+          "x": 49,
+          "y": 646,
+          "w": 183,
+          "h": 208,
+          "foot": 91
+        },
+        {
+          "name": "attack-1",
+          "x": 281,
+          "y": 610,
+          "w": 143,
+          "h": 244,
+          "foot": 71
+        },
+        {
+          "name": "attack-2",
+          "x": 432,
+          "y": 646,
+          "w": 202,
+          "h": 207,
+          "foot": 101
+        },
+        {
+          "name": "attack-3",
+          "x": 757,
+          "y": 617,
+          "w": 162,
+          "h": 237,
+          "foot": 81
+        },
+        {
+          "name": "attack-4",
+          "x": 1075,
+          "y": 651,
+          "w": 212,
+          "h": 208,
+          "foot": 106
+        },
+        {
+          "name": "drive-0",
+          "x": 57,
+          "y": 1144,
+          "w": 275,
+          "h": 172,
+          "foot": 137
+        },
+        {
+          "name": "drive-1",
+          "x": 387,
+          "y": 1144,
+          "w": 274,
+          "h": 172,
+          "foot": 137
+        },
+        {
+          "name": "drive-2",
+          "x": 701,
+          "y": 1144,
+          "w": 271,
+          "h": 171,
+          "foot": 135
+        },
+        {
+          "name": "drive-3",
+          "x": 1019,
+          "y": 1144,
+          "w": 283,
+          "h": 171,
+          "foot": 141
+        },
+        {
+          "name": "block-0",
+          "x": 757,
+          "y": 617,
+          "w": 162,
+          "h": 237,
+          "foot": 81
+        },
+        {
+          "name": "jump-0",
+          "x": 184,
+          "y": 942,
+          "w": 87,
+          "h": 167,
+          "foot": 43
+        },
+        {
+          "name": "jump-1",
+          "x": 313,
+          "y": 871,
+          "w": 137,
+          "h": 193,
+          "foot": 68
+        },
+        {
+          "name": "jump-2",
+          "x": 495,
+          "y": 899,
+          "w": 185,
+          "h": 167,
+          "foot": 92
+        },
+        {
+          "name": "jump-3",
+          "x": 689,
+          "y": 922,
+          "w": 189,
+          "h": 174,
+          "foot": 94
+        },
+        {
+          "name": "jump-4",
+          "x": 878,
+          "y": 956,
+          "w": 148,
+          "h": 157,
+          "foot": 74
+        }
+      ],
+      "animations": [
+        {
+          "key": "yasumi-idle",
+          "frames": [
+            "walk-0"
+          ],
+          "frameRate": 1,
+          "repeat": -1
+        },
+        {
+          "key": "yasumi-walk",
+          "frames": [
+            "walk-1",
+            "walk-2",
+            "walk-3",
+            "walk-4",
+            "walk-5",
+            "walk-6"
+          ],
+          "frameRate": 10,
+          "repeat": -1
+        },
+        {
+          "key": "yasumi-hurt",
+          "frames": [
+            "hurt-1",
+            "hurt-2",
+            "hurt-3"
+          ],
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "key": "yasumi-death",
+          "frames": [
+            "hurt-4",
+            "hurt-5",
+            "death-0",
+            "death-1"
+          ],
+          "frameRate": 6,
+          "repeat": 0
+        },
+        {
+          "key": "yasumi-attack",
+          "frames": [
+            "attack-0",
+            "attack-1",
+            "attack-2",
+            "attack-3",
+            "attack-4"
+          ],
+          "frameRate": 10,
+          "repeat": 0
+        },
+        {
+          "key": "yasumi-drive",
+          "frames": [
+            "drive-0",
+            "drive-1",
+            "drive-2",
+            "drive-3"
+          ],
+          "frameRate": 8,
+          "repeat": -1
+        },
+        {
+          "key": "yasumi-block",
+          "frames": [
+            "block-0"
+          ],
+          "frameRate": 1,
+          "repeat": -1
+        },
+        {
+          "key": "yasumi-jump",
+          "frames": [
+            "jump-0",
+            "jump-1",
+            "jump-2",
+            "jump-3",
+            "jump-4"
+          ],
+          "frameRate": 6,
+          "repeat": 0
+        },
+        {
+          "key": "yasumi-jump-attack",
+          "frames": [
+            "jump-0",
+            "jump-1",
+            "jump-2",
+            "jump-3",
+            "jump-4"
+          ],
+          "frameRate": 10,
+          "repeat": 0
+        }
+      ]
+    },
+    {
+      "id": "vilain",
+      "name": "Level 1 Vilain",
+      "facing": "right",
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "path": "assets/purchased_assets/sprites/level_1_vilain_1.png",
+      "type": "atlas",
+      "width": 1024,
+      "height": 1024,
+      "frames": [
+        {
+          "name": "walk-0",
+          "x": 14,
+          "y": 109,
+          "w": 117,
+          "h": 218,
+          "foot": 56
+        },
+        {
+          "name": "walk-1",
+          "x": 142,
+          "y": 109,
+          "w": 116,
+          "h": 215,
+          "foot": 55
+        },
+        {
+          "name": "walk-2",
+          "x": 271,
+          "y": 110,
+          "w": 118,
+          "h": 214,
+          "foot": 55
+        },
+        {
+          "name": "walk-3",
+          "x": 401,
+          "y": 111,
+          "w": 107,
+          "h": 213,
+          "foot": 69
+        },
+        {
+          "name": "walk-4",
+          "x": 520,
+          "y": 111,
+          "w": 112,
+          "h": 213,
+          "foot": 53
+        },
+        {
+          "name": "walk-5",
+          "x": 652,
+          "y": 110,
+          "w": 112,
+          "h": 214,
+          "foot": 54
+        },
+        {
+          "name": "walk-6",
+          "x": 784,
+          "y": 110,
+          "w": 112,
+          "h": 215,
+          "foot": 58
+        },
+        {
+          "name": "walk-7",
+          "x": 911,
+          "y": 110,
+          "w": 104,
+          "h": 214,
+          "foot": 56
+        },
+        {
+          "name": "attack-0",
+          "x": 17,
+          "y": 414,
+          "w": 142,
+          "h": 226,
+          "foot": 74
+        },
+        {
+          "name": "attack-1",
+          "x": 197,
+          "y": 402,
+          "w": 138,
+          "h": 238,
+          "foot": 69
+        },
+        {
+          "name": "attack-2",
+          "x": 340,
+          "y": 450,
+          "w": 160,
+          "h": 190,
+          "foot": 99
+        },
+        {
+          "name": "attack-3",
+          "x": 502,
+          "y": 449,
+          "w": 138,
+          "h": 191,
+          "foot": 80
+        },
+        {
+          "name": "attack-4",
+          "x": 640,
+          "y": 444,
+          "w": 190,
+          "h": 196,
+          "foot": 102
+        },
+        {
+          "name": "attack-5",
+          "x": 830,
+          "y": 449,
+          "w": 188,
+          "h": 206,
+          "foot": 98
+        },
+        {
+          "name": "death-0",
+          "x": 6,
+          "y": 744,
+          "w": 187,
+          "h": 193,
+          "foot": 105
+        },
+        {
+          "name": "death-1",
+          "x": 193,
+          "y": 772,
+          "w": 155,
+          "h": 165,
+          "foot": 78
+        },
+        {
+          "name": "death-2",
+          "x": 348,
+          "y": 798,
+          "w": 151,
+          "h": 140,
+          "foot": 88
+        },
+        {
+          "name": "death-3",
+          "x": 503,
+          "y": 846,
+          "w": 154,
+          "h": 89,
+          "foot": 82
+        },
+        {
+          "name": "death-4",
+          "x": 666,
+          "y": 835,
+          "w": 166,
+          "h": 100,
+          "foot": 87
+        },
+        {
+          "name": "death-5",
+          "x": 840,
+          "y": 831,
+          "w": 172,
+          "h": 105,
+          "foot": 91
+        }
+      ],
+      "animations": [
+        {
+          "key": "vilain-idle",
+          "frames": [
+            "walk-0"
+          ],
+          "frameRate": 1,
+          "repeat": -1
+        },
+        {
+          "key": "vilain-walk",
+          "frames": [
+            "walk-0",
+            "walk-1",
+            "walk-2",
+            "walk-3",
+            "walk-4",
+            "walk-5",
+            "walk-6",
+            "walk-7"
+          ],
+          "frameRate": 8,
+          "repeat": -1
+        },
+        {
+          "key": "vilain-attack",
+          "frames": [
+            "attack-0",
+            "attack-1",
+            "attack-2",
+            "attack-3",
+            "attack-4",
+            "attack-5"
+          ],
+          "frameRate": 10,
+          "repeat": 0
+        },
+        {
+          "key": "vilain-death",
+          "frames": [
+            "death-0",
+            "death-1",
+            "death-2",
+            "death-3",
+            "death-4",
+            "death-5"
+          ],
+          "frameRate": 8,
+          "repeat": 0
+        }
+      ]
+    },
+    {
+      "id": "abeni",
+      "name": "Abeni",
+      "vehicle": "SUV",
+      "facing": "right",
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "path": "assets/purchased_assets/sprites/abeni.png",
+      "type": "atlas",
+      "width": 1360,
+      "height": 1360,
+      "frames": [
+        {
+          "name": "walk-0",
+          "x": 36,
+          "y": 115,
+          "w": 122,
+          "h": 160
+        },
+        {
+          "name": "walk-1",
+          "x": 222,
+          "y": 115,
+          "w": 120,
+          "h": 160
+        },
+        {
+          "name": "walk-2",
+          "x": 401,
+          "y": 115,
+          "w": 120,
+          "h": 159
+        },
+        {
+          "name": "walk-3",
+          "x": 588,
+          "y": 115,
+          "w": 118,
+          "h": 159
+        },
+        {
+          "name": "walk-4",
+          "x": 755,
+          "y": 115,
+          "w": 119,
+          "h": 160
+        },
+        {
+          "name": "walk-5",
+          "x": 926,
+          "y": 115,
+          "w": 110,
+          "h": 160
+        },
+        {
+          "name": "walk-6",
+          "x": 1081,
+          "y": 115,
+          "w": 115,
+          "h": 160
+        },
+        {
+          "name": "walk-7",
+          "x": 1234,
+          "y": 115,
+          "w": 114,
+          "h": 161
+        },
+        {
+          "name": "hurt-0",
+          "x": 22,
+          "y": 380,
+          "w": 118,
+          "h": 158
+        },
+        {
+          "name": "hurt-1",
+          "x": 177,
+          "y": 381,
+          "w": 82,
+          "h": 157
+        },
+        {
+          "name": "hurt-2",
+          "x": 349,
+          "y": 382,
+          "w": 99,
+          "h": 158
+        },
+        {
+          "name": "hurt-3",
+          "x": 487,
+          "y": 405,
+          "w": 91,
+          "h": 135
+        },
+        {
+          "name": "hurt-4",
+          "x": 616,
+          "y": 457,
+          "w": 138,
+          "h": 85
+        },
+        {
+          "name": "hurt-5",
+          "x": 784,
+          "y": 459,
+          "w": 141,
+          "h": 83
+        },
+        {
+          "name": "hurt-6",
+          "x": 976,
+          "y": 477,
+          "w": 152,
+          "h": 61
+        },
+        {
+          "name": "hurt-7",
+          "x": 1176,
+          "y": 478,
+          "w": 163,
+          "h": 61
+        },
+        {
+          "name": "attack-0",
+          "x": 44,
+          "y": 647,
+          "w": 144,
+          "h": 150
+        },
+        {
+          "name": "attack-1",
+          "x": 254,
+          "y": 620,
+          "w": 151,
+          "h": 177
+        },
+        {
+          "name": "attack-2",
+          "x": 455,
+          "y": 647,
+          "w": 187,
+          "h": 150
+        },
+        {
+          "name": "attack-3",
+          "x": 703,
+          "y": 649,
+          "w": 195,
+          "h": 149
+        },
+        {
+          "name": "attack-4",
+          "x": 949,
+          "y": 645,
+          "w": 169,
+          "h": 152
+        },
+        {
+          "name": "attack-5",
+          "x": 1177,
+          "y": 649,
+          "w": 164,
+          "h": 149
+        },
+        {
+          "name": "jump-0",
+          "x": 46,
+          "y": 896,
+          "w": 183,
+          "h": 152
+        },
+        {
+          "name": "jump-1",
+          "x": 294,
+          "y": 893,
+          "w": 109,
+          "h": 153
+        },
+        {
+          "name": "jump-2",
+          "x": 505,
+          "y": 864,
+          "w": 162,
+          "h": 184
+        },
+        {
+          "name": "jump-3",
+          "x": 724,
+          "y": 894,
+          "w": 175,
+          "h": 162
+        },
+        {
+          "name": "jump-4",
+          "x": 946,
+          "y": 903,
+          "w": 169,
+          "h": 145
+        },
+        {
+          "name": "jump-5",
+          "x": 1185,
+          "y": 919,
+          "w": 147,
+          "h": 138
+        },
+        {
+          "name": "drive-0",
+          "x": 30,
+          "y": 1148,
+          "w": 221,
+          "h": 135
+        },
+        {
+          "name": "drive-1",
+          "x": 305,
+          "y": 1148,
+          "w": 219,
+          "h": 135
+        },
+        {
+          "name": "drive-2",
+          "x": 582,
+          "y": 1148,
+          "w": 216,
+          "h": 135
+        },
+        {
+          "name": "drive-3",
+          "x": 854,
+          "y": 1148,
+          "w": 215,
+          "h": 135
+        },
+        {
+          "name": "drive-4",
+          "x": 1121,
+          "y": 1149,
+          "w": 219,
+          "h": 135
+        }
+      ],
+      "animations": [
+        {
+          "key": "abeni-idle",
+          "frames": [
+            "walk-0"
+          ],
+          "frameRate": 1,
+          "repeat": -1
+        },
+        {
+          "key": "abeni-walk",
+          "frames": [
+            "walk-1",
+            "walk-2",
+            "walk-3",
+            "walk-4",
+            "walk-5",
+            "walk-6",
+            "walk-7"
+          ],
+          "frameRate": 8,
+          "repeat": -1
+        },
+        {
+          "key": "abeni-ready",
+          "frames": [
+            "hurt-0"
+          ],
+          "frameRate": 1,
+          "repeat": -1
+        },
+        {
+          "key": "abeni-hurt",
+          "frames": [
+            "hurt-1",
+            "hurt-2",
+            "hurt-3"
+          ],
+          "frameRate": 8,
+          "repeat": 0
+        },
+        {
+          "key": "abeni-death",
+          "frames": [
+            "hurt-4",
+            "hurt-5",
+            "hurt-6",
+            "hurt-7"
+          ],
+          "frameRate": 6,
+          "repeat": 0
+        },
+        {
+          "key": "abeni-attack",
+          "frames": [
+            "attack-0",
+            "attack-1",
+            "attack-2",
+            "attack-3",
+            "attack-4",
+            "attack-5"
+          ],
+          "frameRate": 10,
+          "repeat": 0
+        },
+        {
+          "key": "abeni-jump",
+          "frames": [
+            "jump-1"
+          ],
+          "frameRate": 1,
+          "repeat": -1
+        },
+        {
+          "key": "abeni-jump-attack",
+          "frames": [
+            "jump-0",
+            "jump-1",
+            "jump-2",
+            "jump-3",
+            "jump-4",
+            "jump-5"
+          ],
+          "frameRate": 10,
+          "repeat": 0
+        },
+        {
+          "key": "abeni-drive",
+          "frames": [
+            "drive-0",
+            "drive-1",
+            "drive-2",
+            "drive-3",
+            "drive-4"
+          ],
+          "frameRate": 8,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "id": "vilain2",
+      "name": "Level 1 Vilain 2",
+      "facing": "right",
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "path": "assets/purchased_assets/sprites/level_1_vilain_2.png",
+      "type": "atlas",
+      "width": 1024,
+      "height": 1024,
+      "frames": [
+        {
+          "name": "walk-0",
+          "x": 14,
+          "y": 109,
+          "w": 117,
+          "h": 218,
+          "foot": 56
+        },
+        {
+          "name": "walk-1",
+          "x": 142,
+          "y": 109,
+          "w": 116,
+          "h": 215,
+          "foot": 55
+        },
+        {
+          "name": "walk-2",
+          "x": 271,
+          "y": 110,
+          "w": 118,
+          "h": 214,
+          "foot": 55
+        },
+        {
+          "name": "walk-3",
+          "x": 401,
+          "y": 111,
+          "w": 107,
+          "h": 213,
+          "foot": 69
+        },
+        {
+          "name": "walk-4",
+          "x": 520,
+          "y": 111,
+          "w": 112,
+          "h": 213,
+          "foot": 53
+        },
+        {
+          "name": "walk-5",
+          "x": 652,
+          "y": 110,
+          "w": 112,
+          "h": 214,
+          "foot": 54
+        },
+        {
+          "name": "walk-6",
+          "x": 784,
+          "y": 110,
+          "w": 112,
+          "h": 215,
+          "foot": 58
+        },
+        {
+          "name": "walk-7",
+          "x": 911,
+          "y": 110,
+          "w": 104,
+          "h": 214,
+          "foot": 56
+        },
+        {
+          "name": "attack-0",
+          "x": 17,
+          "y": 414,
+          "w": 142,
+          "h": 226,
+          "foot": 74
+        },
+        {
+          "name": "attack-1",
+          "x": 197,
+          "y": 402,
+          "w": 138,
+          "h": 238,
+          "foot": 69
+        },
+        {
+          "name": "attack-2",
+          "x": 340,
+          "y": 450,
+          "w": 160,
+          "h": 190,
+          "foot": 99
+        },
+        {
+          "name": "attack-3",
+          "x": 502,
+          "y": 449,
+          "w": 138,
+          "h": 191,
+          "foot": 80
+        },
+        {
+          "name": "attack-4",
+          "x": 640,
+          "y": 444,
+          "w": 190,
+          "h": 196,
+          "foot": 102
+        },
+        {
+          "name": "attack-5",
+          "x": 830,
+          "y": 449,
+          "w": 188,
+          "h": 206,
+          "foot": 98
+        },
+        {
+          "name": "death-0",
+          "x": 6,
+          "y": 744,
+          "w": 187,
+          "h": 193,
+          "foot": 105
+        },
+        {
+          "name": "death-1",
+          "x": 193,
+          "y": 772,
+          "w": 155,
+          "h": 165,
+          "foot": 78
+        },
+        {
+          "name": "death-2",
+          "x": 348,
+          "y": 798,
+          "w": 151,
+          "h": 140,
+          "foot": 88
+        },
+        {
+          "name": "death-3",
+          "x": 503,
+          "y": 846,
+          "w": 154,
+          "h": 89,
+          "foot": 82
+        },
+        {
+          "name": "death-4",
+          "x": 666,
+          "y": 835,
+          "w": 166,
+          "h": 100,
+          "foot": 87
+        },
+        {
+          "name": "death-5",
+          "x": 840,
+          "y": 831,
+          "w": 172,
+          "h": 105,
+          "foot": 91
+        }
+      ],
+      "animations": [
+        {
+          "key": "vilain2-idle",
+          "frames": [
+            "walk-0"
+          ],
+          "frameRate": 1,
+          "repeat": -1
+        },
+        {
+          "key": "vilain2-walk",
+          "frames": [
+            "walk-0",
+            "walk-1",
+            "walk-2",
+            "walk-3",
+            "walk-4",
+            "walk-5",
+            "walk-6",
+            "walk-7"
+          ],
+          "frameRate": 8,
+          "repeat": -1
+        },
+        {
+          "key": "vilain2-attack",
+          "frames": [
+            "attack-0",
+            "attack-1",
+            "attack-2",
+            "attack-3",
+            "attack-4",
+            "attack-5"
+          ],
+          "frameRate": 10,
+          "repeat": 0
+        },
+        {
+          "key": "vilain2-death",
+          "frames": [
+            "death-0",
+            "death-1",
+            "death-2",
+            "death-3",
+            "death-4",
+            "death-5"
+          ],
+          "frameRate": 8,
+          "repeat": 0
+        }
+      ]
+    },
+    {
+      "id": "vilain3f",
+      "name": "Level 1 Vilain 3",
+      "facing": "left",
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "path": "assets/purchased_assets/sprites/level_1_vilain_3_F.png",
+      "type": "atlas",
+      "width": 1024,
+      "height": 1024,
+      "frames": [
+        {
+          "name": "walk-0",
+          "x": 35,
+          "y": 109,
+          "w": 109,
+          "h": 216,
+          "foot": 56
+        },
+        {
+          "name": "walk-1",
+          "x": 184,
+          "y": 109,
+          "w": 109,
+          "h": 215,
+          "foot": 49
+        },
+        {
+          "name": "walk-2",
+          "x": 344,
+          "y": 109,
+          "w": 112,
+          "h": 218,
+          "foot": 67
+        },
+        {
+          "name": "walk-3",
+          "x": 860,
+          "y": 109,
+          "w": 112,
+          "h": 216,
+          "foot": 72
+        },
+        {
+          "name": "attack-0",
+          "x": 683,
+          "y": 421,
+          "w": 137,
+          "h": 229,
+          "foot": 55
+        },
+        {
+          "name": "attack-1",
+          "x": 820,
+          "y": 434,
+          "w": 164,
+          "h": 216,
+          "foot": 75
+        },
+        {
+          "name": "attack-2",
+          "x": 28,
+          "y": 726,
+          "w": 128,
+          "h": 243,
+          "foot": 55
+        },
+        {
+          "name": "attack-3",
+          "x": 176,
+          "y": 709,
+          "w": 164,
+          "h": 260,
+          "foot": 56
+        },
+        {
+          "name": "attack-4",
+          "x": 330,
+          "y": 744,
+          "w": 202,
+          "h": 225,
+          "foot": 62
+        },
+        {
+          "name": "death-0",
+          "x": 530,
+          "y": 820,
+          "w": 260,
+          "h": 149,
+          "foot": 113
+        },
+        {
+          "name": "death-1",
+          "x": 780,
+          "y": 841,
+          "w": 238,
+          "h": 160,
+          "foot": 180
+        }
+      ],
+      "animations": [
+        {
+          "key": "vilain3f-idle",
+          "frames": [
+            "walk-0"
+          ],
+          "frameRate": 1,
+          "repeat": -1
+        },
+        {
+          "key": "vilain3f-walk",
+          "frames": [
+            "walk-0",
+            "walk-1",
+            "walk-2",
+            "walk-3"
+          ],
+          "frameRate": 8,
+          "repeat": -1
+        },
+        {
+          "key": "vilain3f-attack",
+          "frames": [
+            "attack-0",
+            "attack-1",
+            "attack-2",
+            "attack-3",
+            "attack-4"
+          ],
+          "frameRate": 10,
+          "repeat": 0
+        },
+        {
+          "key": "vilain3f-death",
+          "frames": [
+            "death-0",
+            "death-1"
+          ],
+          "frameRate": 8,
+          "repeat": 0
+        }
+      ]
+    },
+    {
+      "id": "vilain3m",
+      "name": "Level 1 Vilain 3",
+      "facing": "left",
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      },
+      "path": "assets/purchased_assets/sprites/level_1_vilain_3_M.png",
+      "type": "atlas",
+      "width": 1360,
+      "height": 1360,
+      "frames": [
+        {
+          "name": "walk-0",
+          "x": 37,
+          "y": 121,
+          "w": 161,
+          "h": 319,
+          "foot": 86
+        },
+        {
+          "name": "walk-1",
+          "x": 236,
+          "y": 120,
+          "w": 165,
+          "h": 320,
+          "foot": 124
+        },
+        {
+          "name": "walk-2",
+          "x": 448,
+          "y": 120,
+          "w": 171,
+          "h": 320,
+          "foot": 98
+        },
+        {
+          "name": "walk-3",
+          "x": 1144,
+          "y": 121,
+          "w": 164,
+          "h": 319,
+          "foot": 91
+        },
+        {
+          "name": "attack-0",
+          "x": 937,
+          "y": 551,
+          "w": 183,
+          "h": 321,
+          "foot": 55
+        },
+        {
+          "name": "attack-1",
+          "x": 1120,
+          "y": 552,
+          "w": 200,
+          "h": 320,
+          "foot": 92
+        },
+        {
+          "name": "attack-2",
+          "x": 32,
+          "y": 965,
+          "w": 181,
+          "h": 327,
+          "foot": 85
+        },
+        {
+          "name": "attack-3",
+          "x": 241,
+          "y": 942,
+          "w": 249,
+          "h": 350,
+          "foot": 86
+        },
+        {
+          "name": "attack-4",
+          "x": 470,
+          "y": 982,
+          "w": 238,
+          "h": 310,
+          "foot": 56
+        },
+        {
+          "name": "death-0",
+          "x": 740,
+          "y": 1148,
+          "w": 310,
+          "h": 139,
+          "foot": 113
+        },
+        {
+          "name": "death-1",
+          "x": 1035,
+          "y": 1118,
+          "w": 316,
+          "h": 206,
+          "foot": 258
+        }
+      ],
+      "animations": [
+        {
+          "key": "vilain3m-idle",
+          "frames": [
+            "walk-0"
+          ],
+          "frameRate": 1,
+          "repeat": -1
+        },
+        {
+          "key": "vilain3m-walk",
+          "frames": [
+            "walk-0",
+            "walk-1",
+            "walk-2",
+            "walk-3"
+          ],
+          "frameRate": 8,
+          "repeat": -1
+        },
+        {
+          "key": "vilain3m-attack",
+          "frames": [
+            "attack-0",
+            "attack-1",
+            "attack-2",
+            "attack-3",
+            "attack-4"
+          ],
+          "frameRate": 10,
+          "repeat": 0
+        },
+        {
+          "key": "vilain3m-death",
+          "frames": [
+            "death-0",
+            "death-1"
+          ],
+          "frameRate": 8,
+          "repeat": 0
+        }
+      ]
+    }
+  ]
+}
