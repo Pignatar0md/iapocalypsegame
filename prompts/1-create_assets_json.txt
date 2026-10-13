@@ -1,0 +1,4 @@
+Study the folder /public/assets/purchased_assets , create an assets.json that is an index to the assets.
+Account for spritesheet animations /public/assets/purchased_assets/sprites/lauti.png
+Account for spritesheet animations /public/assets/purchased_assets/sprites/yasumi.png
+So that we can easily reference this assets.json for phaser

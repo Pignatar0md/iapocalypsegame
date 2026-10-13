@@ -1,0 +1,4 @@
+Implementar un menu donde el usuario pueda elegir personaje, el siguiente archivo deberia servir
+como ejemplo: /public/assets/select1.png y /public/assets/select2.png.
+Esta pantalla deberia ubicarse antes del loading del juego pero luego de la pantalla donde se apreta el 
+boton "jugar".
