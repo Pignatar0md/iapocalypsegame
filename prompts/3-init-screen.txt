@@ -1,0 +1,3 @@
+Necesitamos hacer, quizas en react y no en phaser, una pantalla de inicio como la siguiente que te paso como ejemplo:
+/public/assets/init.png.
+Cuando se presione jugar, comience el juego. El fondo de la pantalla es /public/images/backgrounds/background_start.png

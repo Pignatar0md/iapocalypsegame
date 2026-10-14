@@ -1,0 +1,7 @@
+Let's use the phaserjs skill to replicate the /public/assets/mockup.webp
+But do it slowly.
+1. Plan it out first - basically you want to add the six background layers first.
+2. Then the tileset for just a flat ground, in a single layer.
+3. Place the character and animate it with controls.
+That's the baseline.
+Use /public/assets/purchased_assets/assets.json for list of assets.
