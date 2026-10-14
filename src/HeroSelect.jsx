@@ -1,3 +1,7 @@
+import { Briefcase, Dumbbell, Music, Palette } from 'lucide-react';
+
+const TRAIT_ICONS = [ Briefcase, Music, Dumbbell, Palette ];
+
 const HEROES = [
     {
         id: 'rafa',
@@ -37,11 +41,19 @@ function HeroSelect ({ onChoose })
                         <button className="hero-card" type="button" key={hero.id} onClick={() => onChoose(hero.id)}>
                             <span className="hero-meta">
                                 <span className="hero-name">{hero.name}</span>
-                                <span>
-                                {hero.traits.map((trait) => (
-                                        trait + ' | '
-                                    ))}
-                                    </span>
+                                <span className="hero-traits">
+                                    {hero.traits.map((trait, index) => {
+                                        const Icon = TRAIT_ICONS[index];
+
+                                        return (
+                                            <span className="hero-trait" key={trait}>
+                                                {index > 0 && <span className="hero-trait-sep">|</span>}
+                                                {Icon && <Icon aria-hidden="true" size={15} strokeWidth={2} />}
+                                                {trait}
+                                            </span>
+                                        );
+                                    })}
+                                </span>
                             </span>
                             <img className={hero.id === 'abeni' ? 'hero-img-abeni' : undefined} src={hero.image} alt="" />
                         </button>

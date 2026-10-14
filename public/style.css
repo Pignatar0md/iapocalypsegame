@@ -201,6 +201,30 @@ body {
     font-weight: 800;
 }
 
+.hero-traits {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 6px;
+    row-gap: 2px;
+}
+
+.hero-trait {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.hero-trait-sep {
+    margin-right: 2px;
+}
+
+.hero-trait svg {
+    flex: none;
+    color: #8e1c1c;
+}
+
 .hero-card img {
     position: absolute;
     inset: 0;
